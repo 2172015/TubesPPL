@@ -1,92 +1,40 @@
-*{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* css/login-page.css */
 
 body {
-    display: flex;
-    background-color: #fff;
+    background-color: #f8f9fa; /* Ganti warna latar belakang sesuai kebutuhan */
 }
 
-/********** Main **********/
-
-main {
-    flex: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding-bottom: 5%;
+.container-fluid {
+    height: 100vh; /* Buat container-fluid mengisi tinggi layar */
 }
 
-.container {
-    display: flex;
+.row {
+    height: 100%; /* Buat row mengisi tinggi container-fluid */
+}
+
+.login-box {
+    background-color: #ffffff; /* Ganti warna latar belakang login-box sesuai kebutuhan */
+    margin: 0 auto 20px;
+    padding-top: 100px; /* Atur padding atas */
+    padding-right: 150px; /* Atur padding kanan */
+    padding-left: 100px; /* Atur padding kiri */
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    width: 40%;
 }
-
-.container h1{
-    text-align: center;
-    margin-bottom: 6vh;
+.login-box form {
+    max-width: 400px; /* Batasi lebar formulir */
+    margin: 0 auto; /* Pusatkan formulir */
 }
-
-.container .text-input {
-    width: 100%;
-    margin: 10px;
-    height: 4vh;
-    border: 1px #B7B7B7 solid;
-    box-shadow: 0.5px 0.5px 2px 0 #737373;
-    border-radius: 3px;
-    text-indent: 5px;
+.login-box h1 {
+    margin-bottom: 20px; /* Tambahkan margin-bottom pada teks "Welcome to TaskTrap" */
 }
-
-.container .text-input::placeholder {
-    color: #9D9D9D;
-    text-indent: 5px;
+.login-box button {
+    width: 100%; /* Buat tombol mengisi lebar maksimal */
+    margin-top: 10px; /* Atur jarak atas tombol */
 }
-
-.container .login-button {
-    background-color: #0073EA;
-    width: 100%;
-    margin: 10px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
-.container .login-button button {
-    background-color: inherit;
-    color: #fff;
-    border: none;
-    width: 100%;
-    height: 4vh;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: all;
-    transition-duration: 100ms;
-}
-
-.container .login-button button:hover {
-    background-color: #0350A1;
-}
-
-.container .register {
-    color: #000000;
-    margin-left: auto;
-    font-size: 12px;
-}
-
-.container .register .register-button {
-    text-decoration: none;
-}
-
-/********** Side **********/
-
-aside {
-    background-color: #9ACEFF;
-    flex: 40%;    
+.background-box {
+    background-color: #0080ff; /* Ganti path gambar sesuai kebutuhan */
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Buat background-box mengisi tinggi row */
 }

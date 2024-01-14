@@ -1,82 +1,27 @@
-*{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* Add this CSS in your existing CSS file or create a new one, for example, "style.css" */
 
 body {
-    background-color: #9ACEFF;
-}
-
-/****** Header ******/
-
-header {
-    display: flex;
-    height: 7vh;
-}
-
-header a {
-    margin-left: auto;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: larger;
-    align-self: center;
-    font-weight: bold;
-}
-
-/****** main ******/
-
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-/****** nav ******/
-
-nav {
-    padding: 20px;
-    flex: 20%;
-    background-color: #FBFDFF;
-    border-radius: 0 20px 0 0;
-    height: 100vh;
-}
-
-nav .nav-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
-.nav-button button {
-    width: 100%;
-    font-size: 24px;
-    text-align: left;
-    padding-left: 2vh;
-    border-radius: 10px;
-    border: none;
-    height: 5vh;
-    margin: 7px;
-    cursor: pointer;
-    background-color: #FBFDFF;
-    transition: all;
-    transition-duration: 200ms;
+#sidebar {
+    height: 100%;
+    width: 250px; /* Set your desired width */
+    position: fixed;
+    top: 60px; /* Adjust this value based on your navbar's height */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: #f8f9fa; /* Set your desired background color */
 }
 
-.nav-button button:hover {
-    background-color: #D0DAE3;
+.navbar {
+    z-index: 1000; /* Ensure the navbar is above the sidebar */
 }
 
-.nav-button button.active {
-    background-color: #D0DAE3;    
-}
-
-/****** Article ******/
-
-article {
-    flex: 70%;
-    margin-left: 4vh;
-    background-color: #FBFDFF;
-    border-radius: 20px 0 0 0;
-    padding: 20px;
+main {
+    margin-left: 250px; /* Set the same width as the sidebar */
+    padding: 15px;
 }
