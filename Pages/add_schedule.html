@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Schedule</title>
+    <link rel="stylesheet" href="../css/add-schedule.css">
+    <script src="../script/add-schedule.js"></script>
+</head>
+<body>
+    <header>
+        <a href="login-page.html"> Logout </a>
+    </header>
+    <main>
+        <nav>
+            <div class="nav-container">
+                <a href="../main-page.html" class="nav-button"> <button> Home </button> </a>
+                <a href="#" class="nav-button"> <button> Schedule </button> </a>
+                <hr>
+                <h2>Schedules List</h2>
+                <a href="#" class="nav-button"> <button> IT Class </button> </a>
+                <a href="#" class="nav-button"> <button class="active"> + New Schedule </button> </a>
+            </div>
+        </nav>
+        <article>
+            <div class="article-container">
+                <div class="article-header">
+                    <h1>New Schedule</h1>
+                    <p>create new Schedule</p>
+                </div>
+                <!-- Inside the <article> section -->
+                <div class="article-fill">
+                    <h3>Class Name</h3>
+                    <input type="text" id="className" name="className" placeholder="Enter Class Name">
+
+                    <h3>Task Name</h3>
+                    <input type="text" id="taskName" name="taskName" placeholder="Enter Task Name">
+
+                    <h3>Task Description</h3>
+                    <textarea id="taskDescription" name="taskDescription" placeholder="Enter Task Description"></textarea>
+
+                    <h3>Task Due Date</h3>
+                    <input type="date" id="taskDueDate" name="taskDueDate">
+
+                    <button id="addTaskButton" class="blue-button">+Task</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
