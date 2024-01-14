@@ -1,0 +1,239 @@
+/**** CSS FILE FOR main-page.css ****/
+/* NAV BAR LINES : 49 - 87 */
+/* ARTICLE LINES : 89 - 126 */
+/* TASK CARD LINES : 125 - 237 (COPY FOR OTHER PAGES)*/ 
+
+
+
+
+
+
+
+
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9ACEFF;
+    height: 100vh;
+}
+
+/****** Header ******/
+
+header {
+    display: flex;
+    height: 5%;
+}
+
+header a {
+    margin-left: auto;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: larger;
+    align-self: center;
+    font-weight: bold;
+}
+
+/****** main ******/
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+}
+
+/****** nav ******/
+
+nav {
+    padding: 20px;
+    flex: 20%;
+    background-color: #FBFDFF;
+    border-radius: 0 20px 0 0;
+    min-height: 100%;
+}
+
+nav .nav-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-button button {
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 2vh;
+    border-radius: 10px;
+    border: none;
+    height: 5vh;
+    margin: 7px;
+    cursor: pointer;
+    background-color: #FBFDFF;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.nav-button button:hover {
+    background-color: #D0DAE3;
+}
+
+.nav-button button.active {
+    background-color: #D0DAE3;    
+}
+
+/****** Article ******/
+
+article {
+    flex: 70%;
+    margin-left: 4vh;
+    background-color: #FBFDFF;
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+    min-height: 100%;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/**** Article Header ****/
+
+.article-container .article-header {
+    background-color: #E8F4FF;
+    margin: -20px -20px 20px -20px;
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+}
+
+.article-container .article-header h1 {
+    margin-bottom: 1rem;
+}
+
+.article-container .article-header p {
+    margin-bottom: -10px;
+}
+
+.article-container .article-fill h2{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+/****** Task Card *****/
+
+.task-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.taskcard-grid {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 7rem 2rem 1rem;
+}
+
+.taskcard-grid .task-card {
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+    width: 16rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 1px #969595;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.taskcard-grid .task-card:hover {
+    box-shadow: 0 0 6px 2px #696969;
+}
+
+.taskcard-grid .task-card .task-card-user {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 3px 0 0;
+}
+
+.taskcard-grid .task-card .task-card-user img {
+    width: 2.3rem;
+}
+
+.taskcard-grid .task-card .task-card-fill {
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 67%;
+    border-radius: 0 0 3px 3px;
+    padding: 0.4rem 0.8rem 0.8rem 0.8rem;
+}
+
+.taskcard-grid .task-card .task-card-fill .task-card-title {
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.taskcard-grid .task-card .task-card-fill .task-card-description-header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.taskcard-grid .task-card .task-card-fill .task-card-desccrition {
+    font-size: 12px;
+    height: 25%;
+    overflow: auto;
+    margin: 0.3rem 0;
+    text-align: justify;
+    padding-right: 0.5rem;
+}
+
+/* width */
+.taskcard-grid .task-card .task-card-fill .task-card-desccrition::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+.taskcard-grid .task-card .task-card-fill .task-card-desccrition::-webkit-scrollbar-track {
+    background: #f3f3f3; 
+}
+   
+  /* Handle */
+.taskcard-grid .task-card .task-card-fill .task-card-desccrition::-webkit-scrollbar-thumb {
+    background: #5eacff;
+    border-radius: 20px; 
+}
+  
+  /* Handle on hover */
+.taskcard-grid .task-card .task-card-fill .task-card-desccrition::-webkit-scrollbar-thumb:hover {
+    background: #288cf7; 
+}
+
+.taskcard-grid .task-card .task-card-fill .task-card-status, .article-container .taskcard-grid .task-card .task-card-fill .task-card-duedate {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    margin-top: 0.7rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    align-items: center;
+}
+
+.task-card-status-color, .task-card-duedate-date {
+    width: 45%;
+    padding: 0.25rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+/***** End of Task Card *****/
