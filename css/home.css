@@ -1,0 +1,82 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9ACEFF;
+}
+
+/****** Header ******/
+
+header {
+    display: flex;
+    height: 7vh;
+}
+
+header a {
+    margin-left: auto;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: larger;
+    align-self: center;
+    font-weight: bold;
+}
+
+/****** main ******/
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/****** nav ******/
+
+nav {
+    padding: 20px;
+    flex: 20%;
+    background-color: #FBFDFF;
+    border-radius: 0 20px 0 0;
+    height: 100vh;
+}
+
+nav .nav-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-button button {
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 2vh;
+    border-radius: 10px;
+    border: none;
+    height: 5vh;
+    margin: 7px;
+    cursor: pointer;
+    background-color: #FBFDFF;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.nav-button button:hover {
+    background-color: #D0DAE3;
+}
+
+.nav-button button.active {
+    background-color: #D0DAE3;    
+}
+
+/****** Article ******/
+
+article {
+    flex: 70%;
+    margin-left: 4vh;
+    background-color: #FBFDFF;
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+}
